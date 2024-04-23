@@ -19,7 +19,7 @@ namespace CheckoutTests
             // Assert
             Dictionary<string, int> items = basket.GetItems();
             Assert.That(items, Contains.Key("A"));
-            Assert.AreEqual(1, items["A"]);
+            Assert.That(items["A"], Is.EqualTo(1));
         }
 
         [Test]
@@ -34,7 +34,7 @@ namespace CheckoutTests
 
             // Assert
             Dictionary<string, int> items = basket.GetItems();
-            Assert.AreEqual(2, items["A"]);
+            Assert.That(items["A"], Is.EqualTo(2));
         }
 
         [Test]
@@ -50,7 +50,7 @@ namespace CheckoutTests
 
             // Assert
             Dictionary<string, int> items = basket.GetItems();
-            Assert.AreEqual(1, items["A"]);
+            Assert.That(items["A"], Is.EqualTo(1));
         }
 
         [Test]
@@ -80,7 +80,7 @@ namespace CheckoutTests
             int quantityOfA = basket.GetQuantity("A");
 
             // Assert
-            Assert.AreEqual(2, quantityOfA);
+            Assert.That(quantityOfA, Is.EqualTo(2));
         }
 
         [Test]
@@ -93,7 +93,7 @@ namespace CheckoutTests
             int quantityOfA = basket.GetQuantity("A");
 
             // Assert
-            Assert.AreEqual(0, quantityOfA);
+            Assert.That(quantityOfA, Is.EqualTo(0));
         }
     }
 }

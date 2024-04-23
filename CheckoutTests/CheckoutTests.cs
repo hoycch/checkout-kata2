@@ -19,7 +19,7 @@ namespace CheckoutTests
             int totalPrice = checkout.GetTotalPrice();
 
             // Assert
-            Assert.AreEqual(0, totalPrice);
+            Assert.That(totalPrice, Is.EqualTo(0));
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace CheckoutTests
             int totalPrice = checkout.GetTotalPrice();
 
             // Assert
-            Assert.AreEqual(50, totalPrice);
+            Assert.That(totalPrice, Is.EqualTo(50));
         }
 
         [Test]
@@ -57,7 +57,7 @@ namespace CheckoutTests
             int totalPrice = checkout.GetTotalPrice();
 
             // Assert
-            Assert.AreEqual(80, totalPrice);
+            Assert.That(totalPrice, Is.EqualTo(80));
         }
 
         [Test]
@@ -80,11 +80,11 @@ namespace CheckoutTests
             int totalPrice = checkout.GetTotalPrice();
 
             // Assert
-            Assert.AreEqual(175, totalPrice);
+            Assert.That(totalPrice, Is.EqualTo(175));
         }
 
         [Test]
-        public void GetTotalPrice_MixedItemsWithAndPartialOriginalPrice_ReturnsCorrectPrice()
+        public void GetTotalPrice_MixedItemsWithAndPartialOriginalialPrice_ReturnsCorrectPrice()
         {
             // Arrange
             var pricingRules = new List<PricingRule>
@@ -106,7 +106,8 @@ namespace CheckoutTests
             int totalPrice = checkout.GetTotalPrice();
 
             // Assert
-            Assert.AreEqual(280, totalPrice);
+            Assert.That(totalPrice, Is.EqualTo(280));
+
         }
 
         [Test]
