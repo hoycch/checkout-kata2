@@ -103,3 +103,4 @@ B:\Users\trio\Projects\SupermarketCheckout\CheckoutTests\obj\Debug\net8.0\refint
 B:\Users\trio\Projects\SupermarketCheckout\CheckoutTests\obj\Debug\net8.0\CheckoutTests.pdb
 B:\Users\trio\Projects\SupermarketCheckout\CheckoutTests\obj\Debug\net8.0\CheckoutTests.genruntimeconfig.cache
 B:\Users\trio\Projects\SupermarketCheckout\CheckoutTests\obj\Debug\net8.0\ref\CheckoutTests.dll
+B:\Users\trio\Projects\SupermarketCheckout\CheckoutTests\obj\Debug\net8.0\CheckoutTests.sourcelink.json
