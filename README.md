@@ -1,4 +1,5 @@
 Supermarket Checkout System Unit Tests
+This repository only contains unit tests part. The main project locates at https://github.com/hoycch/checkout-kata
 This directory contains the unit tests for the Supermarket Checkout System project. The tests are written using the NUnit testing framework and follow a test-driven development (TDD) approach.
 Test Structure
 The unit tests are organized into the following classes:
